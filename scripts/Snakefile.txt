@@ -1,0 +1,11 @@
+rule all:
+    input:
+        glob("../data/2-interim/WINTI_TEST/foufiles/*.nc")
+
+rule prep_folders:
+    input:
+        data_folder = "WINTI_TEST"
+    output:
+        "../data/2-interim/WINTI_TEST/foufiles/{run}_fou.nc"
+    script:
+        "scripts/00_prep_folders.py"
