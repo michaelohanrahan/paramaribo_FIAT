@@ -1,0 +1,14 @@
+[project]
+name = "fiat_snake"
+version = "0.1.0"
+description = "Add a short description here"
+channels = ["conda-forge", "bioconda"]
+platforms = ["win-64"]
+
+[tasks]
+
+[dependencies]
+jinja2-time = ">=0.2.0,<0.3"
+cookiecutter = ">=2.6.0,<2.7"
+dvc = ">=3.48.4,<3.49"
+snakemake = ">=8.8.0,<8.9"
